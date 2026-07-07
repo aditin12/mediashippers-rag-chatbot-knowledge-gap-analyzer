@@ -1,0 +1,34 @@
+Document ID: MS-LIFE-009
+Document 9 — Deal Expiry & Lifecycle Rules
+
+Deal Expiry Rules
+Deals automatically expire on the selected expiry date initially set by the buyer.
+When a deal expires, it undergoes several state changes:
+
+It no longer appears in the seller discovery interface.
+
+It stops accepting any new submissions.
+
+The deal parameters become read-only and can no longer be edited by the buyer.
+
+Submission Handling After Expiry
+The expiry of a deal impacts active submissions in the following ways:
+
+Sellers cannot modify their existing submissions.
+
+Buyers cannot shortlist any new titles from the submission pool.
+
+However, the chat interface remains fully accessible for titles that were already shortlisted prior to the expiry date, allowing ongoing negotiations to conclude.
+
+Deal Editing Rules
+Buyers have the ability to edit their deals before the expiry date is reached.
+Major edits (such as changing rights, terms, or regions) will trigger the following system actions:
+
+Seller notifications are sent out to those who have already submitted.
+
+Deal ranking is recalculated across the marketplace.
+
+All associated metadata is revalidated to ensure continued compliance.
+
+Deal Archival
+Expired deals do not stay on the dashboard forever. They are automatically archived after 90 days. Archived deals remain securely stored and are available to platform administrators exclusively for audit purposes.

@@ -1,0 +1,59 @@
+{
+  "document": {
+    "id": "MS-META-008",
+    "title": "Metadata & Content Standards",
+    "department": "Content Operations",
+    "description": "Defines the supported categories, genres, languages, and artwork requirements for Mediashippers marketplace submissions."
+  },
+  "supportedContentCategories": [
+    "Movies",
+    "TV Series",
+    "Documentaries",
+    "Kids Content",
+    "Short Films",
+    "Animation",
+    "Reality Shows"
+  ],
+  "genreStandards": [
+    "Action",
+    "Drama",
+    "Comedy",
+    "Horror",
+    "Thriller",
+    "Romance",
+    "Sci-Fi",
+    "Crime",
+    "Family",
+    "Documentary"
+  ],
+  "languageStandards": {
+    "primaryLanguages": [
+      "English",
+      "Hindi",
+      "Spanish",
+      "Korean",
+      "Japanese",
+      "German",
+      "French",
+      "Tamil",
+      "Telugu"
+    ],
+    "dubbedLanguageRules": {
+      "requirement": "Titles with dubbed versions must explicitly specify the following metadata fields:",
+      "fields": [
+        "dub_language",
+        "dub_ownership",
+        "dub_quality_status",
+        "dubbing_rights_availability"
+      ]
+    }
+  },
+  "artworkRequirements": {
+    "mandatoryAssets": [
+      "poster_artwork",
+      "banner_artwork",
+      "thumbnail_image"
+    ],
+    "penalty": "Missing artwork significantly reduces discoverability scores and may prevent matching."
+  }
+}

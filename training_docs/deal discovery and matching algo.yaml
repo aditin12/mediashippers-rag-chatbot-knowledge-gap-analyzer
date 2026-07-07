@@ -1,0 +1,38 @@
+document_id: MS-MATCH-006
+department: Marketplace Operations
+title: Deal Discovery & Matching Logic
+discovery_overview:
+  description: The marketplace recommends deals to sellers based on multiple matching factors.
+  matching_parameters:
+    - language compatibility
+    - territory availability
+    - rights ownership
+    - content category
+    - genre matching
+    - dubbing availability
+eligibility_conditions:
+  - rule: rights are active
+  - rule: territory conflicts do not exist
+  - rule: metadata is complete
+  - rule: required languages match
+  - rule: content category matches buyer requirements
+ranking_factors:
+  weighting_criteria:
+    - territory overlap
+    - language match score
+    - rights compatibility
+    - seller activity score
+    - submission success history
+conflict_detection:
+  action: block_submission
+  triggers:
+    - exclusive rights already exist in selected territories
+    - licensing periods overlap
+    - title rights have expired
+dubbing_match_logic:
+  existing_dubs:
+    impact: increase_compatibility_score
+    ranking_adjustment: higher_ranking
+  unsupported_languages:
+    impact: reduce_compatibility_score
+    ranking_adjustment: lower_ranking
